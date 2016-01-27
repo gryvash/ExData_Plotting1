@@ -22,6 +22,7 @@ mData <- read.csv2("household_power_consumption.txt", header = FALSE, stringsAsF
 names(mData) <- mDataNames
 
 # Make histogram
+par(bg = "transparent")
 hist(as.numeric(mData$Global_active_power),
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)",

@@ -25,6 +25,7 @@ mData$DateTime <- as.POSIXct(paste(mData$Date, mData$Time), format="%d/%m/%Y %H:
 
 # Make plot
 png(filename = "plot3.png")
+par(bg = "transparent")
 plot(mData$DateTime, mData$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
 lines(mData$DateTime, mData$Sub_metering_2, col="red")
 lines(mData$DateTime, mData$Sub_metering_3, col="blue")

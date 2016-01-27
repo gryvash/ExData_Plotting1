@@ -24,6 +24,7 @@ names(mData) <- mDataNames
 mData$DateTime <- as.POSIXct(paste(mData$Date, mData$Time), format="%d/%m/%Y %H:%M:%S")
 
 # Make plot
+par(bg = "transparent")
 plot(mData$DateTime, mData$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 # Copy to file and close all graphics devices

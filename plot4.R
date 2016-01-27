@@ -26,6 +26,7 @@ mData$datetime <- as.POSIXct(paste(mData$Date, mData$Time), format="%d/%m/%Y %H:
 # Make plots
 png(filename = "plot4.png")
 par(mfcol = c(2,2))
+par(bg = "transparent")
 
 plot(mData$datetime, mData$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power")
 
